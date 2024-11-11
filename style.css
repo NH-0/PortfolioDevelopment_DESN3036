@@ -1,3 +1,14 @@
 *{
     background-color: rgba(16, 25, 32, 1);
 }
+
+:root{
+    --primarytext-color: rgba(163, 211, 231, 1);
+    --subtext-color: rgba(143, 184, 195, 1);
+    --background-color: rgba(16, 25, 32, 1);
+    --headeractive-text: rgba(143, 184, 195, 1);
+    --headernonactive-text: rgba(73, 108, 117, 1);
+    --transition-duration: 0.5s;
+    --scale: 1;
+    --scale-hover: 1.1;
+}
