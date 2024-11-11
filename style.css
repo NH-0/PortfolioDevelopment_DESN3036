@@ -8,7 +8,40 @@
     --background-color: rgba(16, 25, 32, 1);
     --headeractive-text: rgba(143, 184, 195, 1);
     --headernonactive-text: rgba(73, 108, 117, 1);
+    --headerbg: rgba(16, 25, 32, 1);
     --transition-duration: 0.5s;
     --scale: 1;
     --scale-hover: 1.1;
+    --spacing-unit: 20px;
+    --font-size-base: 20px;
+    --font-size-heading: 30px;
+    --font-weight-regular: 300;
+    --font-weight-bold: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-unit);
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    color: var(--primarytext-color);
+    transition: color var(--transition-duration) ease, transform var(--transition-duration)ease;
+}
+
+nav ul li a:hover {
+    color: var(--headeractive-text);
+    transform: scale(var(--scale-hover));
+}
+
+header {
+    display: flex;
+    background-color: var(--headerbg);
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-unit);
 }
