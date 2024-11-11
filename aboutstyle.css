@@ -50,3 +50,11 @@ header {
     padding: var(--spacing-unit);
     float: right;
 }
+
+p{
+    color: var(--subtext-color);
+}
+
+h1{
+    color: var(--primarytext-color);
+}
