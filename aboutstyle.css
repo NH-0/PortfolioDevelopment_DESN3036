@@ -57,4 +57,11 @@ p{
 
 h1{
     color: var(--primarytext-color);
+    justify-content: center;
+    display: flex;
+}
+
+.text1{
+    display: inline-block;
+    align-items: center;
 }
