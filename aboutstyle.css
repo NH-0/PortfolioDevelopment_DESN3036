@@ -90,6 +90,6 @@ hr {
     margin: var(--spacing-unit) 0; 
 }
 
-.text2 p{
+.text2 {
     color: var(--subtext-color);
 }
