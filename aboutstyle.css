@@ -1,5 +1,8 @@
 *{
     background-color: rgba(16, 25, 32, 1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -27,6 +30,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: var(--spacing-unit);
+    flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -45,23 +49,43 @@ nav ul li a:hover {
 header {
     display: flex;
     background-color: var(--headerbg);
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: var(--spacing-unit);
-    float: right;
+    width: 100%;
 }
 
-p{
-    color: var(--subtext-color);
-}
-
-h1{
+h1 {
+    margin-top: var(--spacing-unit);
+    font-size: var(--font-size-heading);
     color: var(--primarytext-color);
-    justify-content: center;
-    display: flex;
 }
 
 .text1{
-    display: inline-block;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50vh;
+    padding bottom: ;
+    align-items: center; /* Centers the h1 horizontally */
+    text-align: center; /* Centers the text */
+    margin: 0 auto;
+    color: var(--subtext-color);
+    width: 600px;
+}
+hr {
+    width: 100%; /* Set width to make it not full-width; adjust as needed */
+    border: none; /* Remove default border */
+    border-top: 2px solid var(--primarytext-color); /* Add a custom color and thickness */
+    margin: var(--spacing-unit) 0; 
+}
+
+.text1 p{
+    line-height: 1.6;
+}
+
+.text2 hr{
+    width: 20%; /* Set width to make it not full-width; adjust as needed */
+    border: none; /* Remove default border */
+    border-top: 2px solid var(--primarytext-color); /* Add a custom color and thickness */
+    margin: var(--spacing-unit) 0; 
 }
