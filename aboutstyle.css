@@ -89,3 +89,7 @@ hr {
     border-top: 2px solid var(--primarytext-color); /* Add a custom color and thickness */
     margin: var(--spacing-unit) 0; 
 }
+
+.text2 p{
+    color: var(--subtext-color);
+}
