@@ -60,35 +60,3 @@ h1 {
     font-size: var(--font-size-heading);
     color: var(--primarytext-color);
 }
-
-.text1{
-    justify-content: center;
-    flex-direction: column;
-    min-height: 50vh;
-    align-items: center; /* Centers the h1 horizontally */
-    text-align: center; /* Centers the text */
-    margin: 0 auto;
-    color: var(--subtext-color);
-    width: 600px;
-}
-hr {
-    width: 100%; /* Set width to make it not full-width; adjust as needed */
-    border: none; /* Remove default border */
-    border-top: 2px solid var(--primarytext-color); /* Add a custom color and thickness */
-    margin: var(--spacing-unit) 0; 
-}
-
-.text1 p{
-    line-height: 1.6;
-}
-
-.text2 hr{
-    width: 20%; /* Set width to make it not full-width; adjust as needed */
-    border: none; /* Remove default border */
-    border-top: 2px solid var(--primarytext-color); /* Add a custom color and thickness */
-    margin: var(--spacing-unit) 0; 
-}
-
-.text2 {
-    color: var(--subtext-color);
-}
