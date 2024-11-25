@@ -65,43 +65,74 @@ header {
     display: grid;
     width: 800px;
     height: 500px;
-    padding-top: 60px;
+    padding-top: 100px;
     margin: auto;
+
 }
 
 .texttop{
-    font-size: 2em;
+    font-size: 1.5em;
     color: rgba(58, 130, 189, 1);
     text-align: left;
     font-family: var(--font-family);
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: flex-start;
+    left: 85px;   
 }
 
 .textmiddle{
-    font-size: 4em;
+    font-size: 4.5em;
     color: var(--subtext-color);
     text-align: center;
     font-family: var(--font-family);
 }
 
-.textbottom{
-    font-size: 2em;
-    color: rgba(58, 130, 189, 1);
-    text-align: right;
+.textmiddle1{
+    font-size: 4.5em;
+    color: var(--subtext-color);
+    text-align: center;
     font-family: var(--font-family);
 }
 
+
+.textbottom{
+    font-size: 1.5em;
+    color: rgba(58, 130, 189, 1);
+    text-align: right;
+    font-family: var(--font-family);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    left: 70px;
+
+}
+
+p{
+    padding-right: 10px;
+    font-size: 1.5em;
+    color: rgba(58, 130, 189, 1);
+    font-weight: bold;
+
+}
+
 .words{
+    display: flex;
     border: 0px solid whitesmoke;
     height: 50px;
     line-height: 50px;
-    font-size: 45px;
+    font-size: 1.5em;
     overflow: hidden; /*over stuff hidden*/
 }
 
 .words span {
     position: relative;
     color: var(--subtext-color);
-    animation: animation 8s
+    font-weight: bold;
+    text-align: start;
+    animation: animation 6s
     ease infinite;
 }
 
