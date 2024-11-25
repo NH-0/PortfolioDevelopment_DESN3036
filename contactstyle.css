@@ -1,6 +1,15 @@
 *{
     background-color: rgba(16, 25, 32, 1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Poppins-regular';
+  src: url(./Fonts/Poppins-Regular.ttf);
+}
+
 
 :root{
     --primarytext-color: rgba(163, 211, 231, 1);
@@ -17,6 +26,7 @@
     --font-size-heading: 30px;
     --font-weight-regular: 300;
     --font-weight-bold: 700;
+    --font-family: 'Poppins-regular', sans-serif;
 }
 
 .active{
@@ -35,7 +45,8 @@ nav ul li a {
     font-weight: var(--font-weight-bold);
     color: var(--headernonactive-text);
     transition: color var(--transition-duration) ease, transform var(--transition-duration)ease;
-}
+    font-family: var(--font-family);
+  }
 
 nav ul li a:hover {
     color: var(--headeractive-text);
@@ -45,22 +56,72 @@ nav ul li a:hover {
 header {
     display: flex;
     background-color: var(--headerbg);
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: var(--spacing-unit);
-    float: right;
+    width: 100%;
 }
 
-h1 {
+body{
+  place-items: center;
+}
+
+h1, h2 {
     margin-top: var(--spacing-unit);
     font-size: var(--font-size-heading);
     color: var(--primarytext-color);
     justify-content: center;
     flex-direction: column;
-    min-height: 50vh;
     align-items: center; /* Centers the h1 horizontally */
     text-align: center; /* Centers the text */
     margin: 0 auto;
     color: var(--subtext-color);
     width: 600px;
+    font-family: var(--font-family);
 }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(166, 183, 187, 1);
+    color: rgba(16, 25, 32, 0.8);
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: var(--font-family);
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .formcontainer {
+    border-radius: 5px;
+    background-color: rgba(46, 69, 87, 0.78);
+    padding: 15px;
+    width: 550px;
+ display: inline-block;
+ margin: auto;
+  }
+
+  form{
+    background-color: rgba(46, 69, 87, 0.78);
+  }
+
+  label{
+    background-color: rgba(46, 69, 87, 0.78);
+    color: rgba(203, 226, 233, 1);
+    font-family: var(--font-family);
+  }

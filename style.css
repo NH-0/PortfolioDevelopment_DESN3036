@@ -1,6 +1,14 @@
 *{
     background-color: rgba(16, 25, 32, 1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url(./Fonts/Poppins-Regular.ttf);
+  }
 
 :root{
     --primarytext-color: rgba(163, 211, 231, 1);
@@ -17,6 +25,7 @@
     --font-size-heading: 30px;
     --font-weight-regular: 300;
     --font-weight-bold: 700;
+    --font-family: 'Poppins-regular', sans-serif;
 }
 
 .active{
@@ -35,6 +44,7 @@ nav ul li a {
     font-weight: var(--font-weight-bold);
     color: var(--headernonactive-text);
     transition: color var(--transition-duration) ease, transform var(--transition-duration)ease;
+    font-family: var(--font-family);
 }
 
 nav ul li a:hover {
@@ -45,8 +55,68 @@ nav ul li a:hover {
 header {
     display: flex;
     background-color: var(--headerbg);
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: var(--spacing-unit);
-    float: right;
+    width: 100%;
+}
+
+.textbox{
+    display: grid;
+    width: 800px;
+    height: 500px;
+    padding-top: 60px;
+    margin: auto;
+}
+
+.texttop{
+    font-size: 2em;
+    color: rgba(58, 130, 189, 1);
+    text-align: left;
+    font-family: var(--font-family);
+}
+
+.textmiddle{
+    font-size: 4em;
+    color: var(--subtext-color);
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.textbottom{
+    font-size: 2em;
+    color: rgba(58, 130, 189, 1);
+    text-align: right;
+    font-family: var(--font-family);
+}
+
+.words{
+    border: 0px solid whitesmoke;
+    height: 50px;
+    line-height: 50px;
+    font-size: 45px;
+    overflow: hidden; /*over stuff hidden*/
+}
+
+.words span {
+    position: relative;
+    color: var(--subtext-color);
+    animation: animation 8s
+    ease infinite;
+}
+
+@keyframes animation {
+    0%,
+    100%{
+        top: 0;
+    }
+    40%{
+        top: -50px;
+    }
+    70%{
+        top: -100px;
+    }
+    100%{
+        top: -100px;
+    }
 }

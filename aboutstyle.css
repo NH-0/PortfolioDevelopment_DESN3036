@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url(./Fonts/Poppins-Regular.ttf);
+  }
+
 :root{
     --primarytext-color: rgba(163, 211, 231, 1);
     --subtext-color: rgba(143, 184, 195, 1);
@@ -20,6 +25,7 @@
     --font-size-heading: 30px;
     --font-weight-regular: 300;
     --font-weight-bold: 700;
+    --font-family: 'Poppins-regular', sans-serif;
 }
 
 .active{
@@ -39,6 +45,7 @@ nav ul li a {
     font-weight: var(--font-weight-bold);
     color: var(--headernonactive-text);
     transition: color var(--transition-duration) ease, transform var(--transition-duration)ease;
+    font-family: var(--font-family);
 }
 
 nav ul li a:hover {
@@ -59,6 +66,7 @@ h1 {
     margin-top: var(--spacing-unit);
     font-size: var(--font-size-heading);
     color: var(--primarytext-color);
+    font-family: var(--font-family);
 }
 
 .text1{
@@ -70,6 +78,7 @@ h1 {
     margin: 0 auto;
     color: var(--subtext-color);
     width: 600px;
+    font-family: var(--font-family);
 }
 hr {
     width: 100%; /* Set width to make it not full-width; adjust as needed */
@@ -80,6 +89,7 @@ hr {
 
 .text1 p{
     line-height: 1.6;
+    font-family: var(--font-family);
 }
 
 .text2 hr{
@@ -87,8 +97,10 @@ hr {
     border: none; /* Remove default border */
     border-top: 2px solid var(--primarytext-color); /* Add a custom color and thickness */
     margin: var(--spacing-unit) 0; 
+    font-family: var(--font-family);
 }
 
 .text2 {
     color: var(--subtext-color);
+    font-family: var(--font-family);
 }
