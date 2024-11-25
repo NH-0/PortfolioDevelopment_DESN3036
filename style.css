@@ -87,6 +87,13 @@ header {
     color: var(--subtext-color);
     text-align: center;
     font-family: var(--font-family);
+    align-items: flex-start;
+    position: relative;
+    justify-content: flex-start;
+    display: flex;
+    left: 230px;
+
+
 }
 
 .textmiddle1{
@@ -94,6 +101,12 @@ header {
     color: var(--subtext-color);
     text-align: center;
     font-family: var(--font-family);
+    align-items: flex-start;
+    position: relative;
+    justify-content: flex-start;
+    display: flex;
+    left: 230px;
+
 }
 
 
