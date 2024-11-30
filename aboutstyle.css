@@ -92,15 +92,32 @@ hr {
     font-family: var(--font-family);
 }
 
-.text2 hr{
+.underline2 hr{
     width: 20%; /* Set width to make it not full-width; adjust as needed */
     border: none; /* Remove default border */
     border-top: 2px solid var(--primarytext-color); /* Add a custom color and thickness */
-    margin: var(--spacing-unit) 0; 
+    margin-left: 280px;
     font-family: var(--font-family);
 }
 
 .text2 {
     color: var(--subtext-color);
     font-family: var(--font-family);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: 330px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 120px 50px 160px;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    width: 390px;
+    font-family: var(--font-family);
+
+  }
+
