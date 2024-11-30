@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url(./Fonts/Poppins-Regular.ttf);
+}
+
 :root{
     --primarytext-color: rgba(163, 211, 231, 1);
     --subtext-color: rgba(143, 184, 195, 1);
@@ -20,6 +25,8 @@
     --font-size-heading: 30px;
     --font-weight-regular: 300;
     --font-weight-bold: 700;
+    --font-family: 'Poppins-regular', sans-serif;
+
 }
 
 .active{
@@ -39,6 +46,7 @@ nav ul li a {
     font-weight: var(--font-weight-bold);
     color: var(--headernonactive-text);
     transition: color var(--transition-duration) ease, transform var(--transition-duration)ease;
+    font-family: var(--font-family);
 }
 
 nav ul li a:hover {
@@ -53,4 +61,65 @@ header {
     align-items: center;
     padding: var(--spacing-unit);
     width: 100%;
+}
+
+.textleft {
+    height: 500px;
+    width: 260px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 110px;
+    margin-left: 70px;
+}
+
+h1 {
+    margin-top: var(--spacing-unit);
+    font-size: var(--font-size-heading);
+    color: var(--primarytext-color);
+    font-family: var(--font-family);
+    font-size: 4em;
+    color: var(--headeractive-text);
+    padding-bottom: 20px;
+}
+
+a,
+h2 {
+    text-decoration: none;
+    color: var(--primarytext-color);
+    font-family: var(--font-family);
+    font-size: 1em;
+}
+
+li{
+    padding: 10px;
+}
+
+img {
+    width: 551px;
+    height: 400px;
+    align-content: center;
+}
+
+.project-card{
+    background-color: rgba(186, 204, 218, 0.6);
+    width: 700px;
+    height: 500px;
+    justify-content: center;
+}
+
+.APProjects {
+    display: grid;
+    grid-template-columns: 250px;
+     justify-content: center;
+     align-content: center;
+     margin-left: 280px;
+     margin-top: 50px;
 }
