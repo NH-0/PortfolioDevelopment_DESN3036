@@ -107,17 +107,18 @@ hr {
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    left: 330px;
+    left: 380px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 120px 50px 160px;
     gap: 10px;
-    background-color: #2196F3;
     padding: 10px;
     width: 390px;
     font-family: var(--font-family);
-
+    align-items: center;
+    margin-left: 290px;
+    color: var(--subtext-color);
   }
 
