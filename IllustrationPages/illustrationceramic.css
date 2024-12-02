@@ -112,8 +112,8 @@ li{
 }
 
 .project-card{
-    background-color: rgba(158, 168, 175, 0.6);
-    width: 800px;
+    background-color: rgba(36, 36, 53, 0.6);
+    width: 700px;
     height: 680px;
 }
 
@@ -122,7 +122,8 @@ li{
     flex-wrap: wrap;
      align-content: center;
      margin-left: 600px;
-     margin-top: 20px;
+     margin-top: 10px;
+     margin-bottom: 20px;
 }
 
 h3 {
@@ -131,6 +132,8 @@ h3 {
     font-family: var(--font-family);
     font-size: 1.15em;
     padding-top: 8px;
+    background-color: rgba(36, 36, 53, 0.6);
+
 }
 
 p {
@@ -142,4 +145,6 @@ p {
     width: 450px;
     line-height: 1.4;
     text-align: center;
+    background-color: rgba(36, 36, 53, 0.6);
+
 }

@@ -114,17 +114,17 @@ li{
 .project-card{
     background-color: rgba(36, 36, 53, 0.6);
     width: 800px;
-    height: 620px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    height: 650px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.APProjects {
+.STProjects {
     display: flex;
     flex-wrap: wrap;
      align-content: center;
      margin-left: 600px;
-     margin-top: 50px;
+     margin-top: 30px;
      margin-bottom: 30px;
      
 }

@@ -106,25 +106,25 @@ li{
 
 .project-card, img{
     justify-items: center;
-    width: 551px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     margin-top: 10px;
 }
 
 .project-card{
     background-color: rgba(36, 36, 53, 0.6);
-    width: 800px;
-    height: 620px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: 600px;
+    height: 650px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.APProjects {
+.NAProjects {
     display: flex;
     flex-wrap: wrap;
      align-content: center;
      margin-left: 600px;
-     margin-top: 50px;
+     margin-top: 10px;
      margin-bottom: 30px;
      
 }
