@@ -1,5 +1,5 @@
-*{
-    background-color: rgba(16, 25, 32, 1);
+* {
+    /* background-color: rgba(16, 25, 32, 1); */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,9 +8,9 @@
 @font-face {
     font-family: 'Poppins-regular';
     src: url(./Fonts/Poppins-Regular.ttf);
-  }
+}
 
-:root{
+:root {
     --primarytext-color: rgba(163, 211, 231, 1);
     --subtext-color: rgba(143, 184, 195, 1);
     --background-color: rgba(16, 25, 32, 1);
@@ -28,7 +28,112 @@
     --font-family: 'Poppins-regular', sans-serif;
 }
 
-.active{
+.gradientcontainer {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index:-1;
+    --background-color: rgba(16, 25, 32, 1);
+
+}
+
+.gradientcontainer div {
+    --background-color: rgba(16, 25, 32, 1);
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    border-radius: 20%;
+    animation: gradient 3s infinite;
+}
+
+@keyframes gradient {
+    50% {
+        transform: scale(1.2) translate(50px);
+    }
+}
+
+.gradientcontainer div:nth-child(1) {
+    height: 90%;
+    width: 80%;
+    background-color: #020305;
+    left: -29%;
+    top: -10%;
+    animation-delay: 1.5s;
+
+}
+
+.gradientcontainer div:nth-child(2) {
+    height: 80%;
+    width: 70%;
+    background-color: #090d1f;
+    left: -12%;
+    top: 62%;
+    animation-delay: 2s;
+}
+
+.gradientcontainer div:nth-child(3) {
+    height: 65%;
+    width: 80%;
+    background-color: #292d3a;
+    left: -15%;
+    top: -20%;
+    animation-delay: 0.3s;
+}
+
+.gradientcontainer div:nth-child(4) {
+    height: 40%;
+    width: 75%;
+    background-color: #090d1f;
+    left: -10%;
+    top: -12%;
+    animation-delay: 1.2s;
+}
+
+.gradientcontainer div:nth-child(5) {
+    height: 100%;
+    width: 45%;
+    background-color: #4a5685;
+    left: 50%;
+    right: 80%;
+    top: -10%%;
+    animation-delay: 3.5s;
+}
+
+.gradientcontainer div:nth-child(6) {
+    height: 90%;
+    width: 90%;
+    background-color: #09313d;
+    left: 10%;
+    top: 45%;
+    animation-delay: 1s;
+}
+
+.gradientcontainer::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(80px);
+}
+
+.gradientcontainer div:nth-child(7) {
+    height: 60%;
+    width: 55%;
+    background-color: #090d1f;
+    left: 50%;
+    top: -10%%;
+    animation-delay: 0.5s;
+}
+
+.active {
     color: var(--headeractive-text);
 }
 
@@ -54,14 +159,14 @@ nav ul li a:hover {
 
 header {
     display: flex;
-    background-color: var(--headerbg);
+    /*background-color: var(--headerbg);*/
     justify-content: flex-end;
     align-items: center;
     padding: var(--spacing-unit);
     width: 100%;
 }
 
-.textbox{
+.textbox {
     display: grid;
     width: 800px;
     height: 500px;
@@ -70,7 +175,7 @@ header {
 
 }
 
-.texttop{
+.texttop {
     font-size: 1.5em;
     color: rgba(58, 130, 189, 1);
     text-align: left;
@@ -79,10 +184,10 @@ header {
     justify-content: flex-start;
     position: relative;
     align-items: flex-start;
-    left: 85px;   
+    left: 85px;
 }
 
-.textmiddle{
+.textmiddle {
     font-size: 4.5em;
     color: var(--subtext-color);
     text-align: center;
@@ -96,7 +201,7 @@ header {
 
 }
 
-.textmiddle1{
+.textmiddle1 {
     font-size: 4.5em;
     color: var(--subtext-color);
     text-align: center;
@@ -110,7 +215,7 @@ header {
 }
 
 
-.textbottom{
+.textbottom {
     font-size: 1.5em;
     color: rgba(58, 130, 189, 1);
     text-align: right;
@@ -123,7 +228,7 @@ header {
 
 }
 
-p{
+p {
     padding-right: 10px;
     font-size: 1.5em;
     color: rgba(58, 130, 189, 1);
@@ -131,13 +236,14 @@ p{
 
 }
 
-.words{
+.words {
     display: flex;
     border: 0px solid whitesmoke;
     height: 50px;
     line-height: 50px;
     font-size: 1.5em;
-    overflow: hidden; /*over stuff hidden*/
+    overflow: hidden;
+    /*over stuff hidden*/
 }
 
 .words span {
@@ -145,22 +251,26 @@ p{
     color: var(--subtext-color);
     font-weight: bold;
     text-align: start;
-    animation: animation 6s
-    ease infinite;
+    animation: animation 6s ease infinite;
 }
 
+
 @keyframes animation {
+
     0%,
-    100%{
+    100% {
         top: 0;
     }
-    40%{
+
+    40% {
         top: -50px;
     }
-    70%{
+
+    70% {
         top: -100px;
     }
-    100%{
+
+    100% {
         top: -100px;
     }
 }
