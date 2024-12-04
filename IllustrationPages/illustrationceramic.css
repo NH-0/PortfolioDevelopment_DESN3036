@@ -1,5 +1,4 @@
 *{
-    background-color: rgba(16, 25, 32, 1);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -57,7 +56,6 @@ nav ul li a:hover {
 
 header {
     display: flex;
-    background-color: var(--headerbg);
     justify-content: flex-end;
     align-items: center;
     padding: var(--spacing-unit);
@@ -78,7 +76,7 @@ header {
     overflow-x: hidden;
     /* Disable horizontal scroll */
     padding-top: 110px;
-    margin-left: 70px;
+    margin-left: 170px;
 }
 
 h1 {
@@ -112,9 +110,11 @@ li{
 }
 
 .project-card{
-    background-color: rgba(36, 36, 53, 0.6);
-    width: 700px;
-    height: 680px;
+    background-color: rgb(1, 6, 20);
+    width: 680px;
+    height: 710px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .CeramicProjects {
@@ -122,7 +122,7 @@ li{
     flex-wrap: wrap;
      align-content: center;
      margin-left: 600px;
-     margin-top: 10px;
+     margin-top: 30px;
      margin-bottom: 20px;
 }
 
@@ -132,8 +132,6 @@ h3 {
     font-family: var(--font-family);
     font-size: 1.15em;
     padding-top: 8px;
-    background-color: rgba(36, 36, 53, 0.6);
-
 }
 
 p {
@@ -145,6 +143,108 @@ p {
     width: 450px;
     line-height: 1.4;
     text-align: center;
-    background-color: rgba(36, 36, 53, 0.6);
+}
 
+
+.gradientcontainer {
+    height: 130vh;
+    width: 100vw;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index:-1;
+    --background-color: rgba(16, 25, 32, 1);
+
+}
+
+.gradientcontainer div {
+    --background-color: rgba(16, 25, 32, 1);
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    animation: gradient 3s infinite;
+}
+
+@keyframes gradient {
+    50% {
+        transform: scale(1.2) translate(50px);
+    }
+}
+
+.gradientcontainer div:nth-child(1) {
+    height: 90%;
+    width: 80%;
+    background-color: #020305;
+    left: -29%;
+    top: -10%;
+    animation-delay: 1.5s;
+
+}
+
+.gradientcontainer div:nth-child(2) {
+    height: 80%;
+    width: 70%;
+    background-color: #090d1f;
+    left: -12%;
+    top: 62%;
+    animation-delay: 2s;
+}
+
+.gradientcontainer div:nth-child(3) {
+    height: 65%;
+    width: 80%;
+    background-color: #292d3a;
+    left: -15%;
+    top: -20%;
+    animation-delay: 0.3s;
+}
+
+.gradientcontainer div:nth-child(4) {
+    height: 40%;
+    width: 75%;
+    background-color: #090d1f;
+    left: -10%;
+    top: -12%;
+    animation-delay: 1.2s;
+}
+
+.gradientcontainer div:nth-child(5) {
+    height: 100%;
+    width: 45%;
+    background-color: #4a5685;
+    left: 50%;
+    right: 80%;
+    top: -10%;
+    animation-delay: 3.5s;
+}
+
+.gradientcontainer div:nth-child(6) {
+    height: 90%;
+    width: 90%;
+    background-color: #09313d;
+    left: 10%;
+    top: 45%;
+    animation-delay: 1s;
+}
+
+.gradientcontainer::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(80px);
+}
+
+.gradientcontainer div:nth-child(7) {
+    height: 60%;
+    width: 55%;
+    background-color: #090d1f;
+    left: 50%;
+    top: -10%;
+    animation-delay: 0.5s;
 }
