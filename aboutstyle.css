@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,9 +7,9 @@
 @font-face {
     font-family: 'Poppins-regular';
     src: url(./Fonts/Poppins-Regular.ttf);
-  }
+}
 
-:root{
+:root {
     --primarytext-color: rgba(163, 211, 231, 1);
     --subtext-color: rgba(143, 184, 195, 1);
     --background-color: rgba(16, 25, 32, 1);
@@ -27,7 +27,7 @@
     --font-family: 'Poppins-regular', sans-serif;
 }
 
-.active{
+.active {
     color: var(--headeractive-text);
 }
 
@@ -67,33 +67,42 @@ h1 {
     font-family: var(--font-family);
 }
 
-.text1{
+.text1 {
     justify-content: center;
     flex-direction: column;
     min-height: 50vh;
-    align-items: center; /* Centers the h1 horizontally */
-    text-align: center; /* Centers the text */
+    align-items: center;
+    /* Centers the h1 horizontally */
+    text-align: center;
+    /* Centers the text */
     margin: 0 auto;
     color: var(--subtext-color);
     width: 600px;
     font-family: var(--font-family);
 }
+
 hr {
-    width: 100%; /* Set width to make it not full-width; adjust as needed */
-    border: none; /* Remove default border */
-    border-top: 2px solid var(--primarytext-color); /* Add a custom color and thickness */
-    margin: var(--spacing-unit) 0; 
+    width: 100%;
+    /* Set width to make it not full-width; adjust as needed */
+    border: none;
+    /* Remove default border */
+    border-top: 2px solid var(--primarytext-color);
+    /* Add a custom color and thickness */
+    margin: var(--spacing-unit) 0;
 }
 
-.text1 p{
+.text1 p {
     line-height: 1.6;
     font-family: var(--font-family);
 }
 
-.underline2 hr{
-    width: 20%; /* Set width to make it not full-width; adjust as needed */
-    border: none; /* Remove default border */
-    border-top: 2px solid var(--primarytext-color); /* Add a custom color and thickness */
+.underline2 hr {
+    width: 20%;
+    /* Set width to make it not full-width; adjust as needed */
+    border: none;
+    /* Remove default border */
+    border-top: 2px solid var(--primarytext-color);
+    /* Add a custom color and thickness */
     margin-left: 280px;
     font-family: var(--font-family);
 }
@@ -108,6 +117,30 @@ hr {
     left: 380px;
 }
 
+.text3 {
+    width: 20%;
+    /* Set width to make it not full-width; adjust as needed */
+    border: none;
+    /* Remove default border */
+    margin-left: 280px;
+    font-family: var(--font-family);
+    align-items: center;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+    padding: 10px;
+    width: 390px;
+    font-family: var(--font-family);
+    align-items: center;
+    margin-left: 290px;
+    color: var(--subtext-color);
+    text-align: center;
+    font-size: 1em;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 120px 50px 160px;
@@ -118,10 +151,10 @@ hr {
     align-items: center;
     margin-left: 290px;
     color: var(--subtext-color);
-  }
+}
 
 
-  .gradientcontainer {
+.gradientcontainer {
     height: 110vh;
     width: 100vw;
     position: absolute;
@@ -132,7 +165,7 @@ hr {
     bottom: 0;
     overflow: hidden;
     border-radius: 10px;
-    z-index:-1;
+    z-index: -1;
     --background-color: rgba(16, 25, 32, 1);
 
 }
@@ -141,7 +174,7 @@ hr {
     --background-color: rgba(16, 25, 32, 1);
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     z-index: -1;
     border-radius: 20%;
     animation: gradient 3s infinite;
@@ -225,3 +258,73 @@ hr {
     top: -10%;
     animation-delay: 0.5s;
 }
+
+.imageboxes img {
+    background-color: #090d1f;
+    background-size: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        /* Centers the header items horizontally */
+        align-items: center;
+        /* Centers the items vertically if needed */
+        width: 100%;
+        /* Ensure the header takes full width */
+    }
+
+    nav ul {
+        align-items: center;
+        /* Center align navigation items */
+        gap: 20px;
+    }
+
+    .text1 {
+        width: 90%;
+    }
+
+    .text1 h1 {
+        font-size: 1.5em;
+    }
+
+    .text1 p {
+        font-size: 1.075em;
+        line-height: 1.5;
+    }
+
+    .grid-container,
+    .grid-container2 {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        margin: auto;
+        margin-left: 23px;
+    }
+
+    .underline2 {
+        margin-left: 5px;
+        align-items: center;
+        justify-content: center;
+        width: 120%;
+        flex: auto;
+
+    }
+
+
+    .text2 {
+        position: unset;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .gradientcontainer {
+        height: 190vh;
+    }
+
+    .text3 {
+        text-align: center;
+        margin: auto;
+    }
