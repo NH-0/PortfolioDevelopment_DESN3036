@@ -107,6 +107,17 @@ hr {
     font-family: var(--font-family);
 }
 
+.underline3 hr {
+    width: 20%;
+    /* Set width to make it not full-width; adjust as needed */
+    border: none;
+    /* Remove default border */
+    border-top: 2px solid var(--primarytext-color);
+    /* Add a custom color and thickness */
+    margin-left: 280px;
+    font-family: var(--font-family);
+}
+
 .text2 {
     color: var(--subtext-color);
     font-family: var(--font-family);
@@ -295,24 +306,28 @@ hr {
         line-height: 1.5;
     }
 
-    .grid-container,
-    .grid-container2 {
+    .grid-container {
         width: 100%;
         padding: 0;
         justify-content: center;
         margin: auto;
-        margin-left: 23px;
+        margin-left: 20px;
+    }
+
+    .grid-container2{
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        margin: auto;
     }
 
     .underline2 {
-        margin-left: 5px;
         align-items: center;
         justify-content: center;
-        width: 120%;
+        width: 100%;
         flex: auto;
 
     }
-
 
     .text2 {
         position: unset;
@@ -328,3 +343,62 @@ hr {
         text-align: center;
         margin: auto;
     }
+}
+@media screen and (max-width: 430px){
+    .gradientcontainer{
+        height: 220vh;
+    }
+.grid-container{
+    padding-bottom: 20px;
+    font-size: 0.85em;
+    grid-template-columns: 120px 30px 160px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container hr{
+    width: 100%;
+}
+
+.grid-container2{
+    font-size: 0.85em;
+}
+
+.underline2 hr{
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.underline3 hr{
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 50%;
+    padding-bottom: 20px;
+}
+}
+
+@media screen and (max-width: 320px){
+    .gradientcontainer{
+        height: 250vh;
+    }
+.grid-container{
+    grid-template-columns: 120px 20px 130px;
+    margin: auto;
+}
+.grid-container2{
+    grid-template-columns: 90px 90px 90px;
+    margin: auto; 
+}
+header {
+    justify-content: center;
+    padding: 10px;
+}
+
+.text1{
+    padding-top: 20px;
+}
+}
