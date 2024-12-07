@@ -404,7 +404,9 @@ p {
         padding: 10px;
     }
 
-@media screen and (max-width: 320px){
+}
+@media screen and (max-width: 320px)
+{
     
     .textbottom{
         padding-right: 30px;
