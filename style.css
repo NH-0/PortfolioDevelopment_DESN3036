@@ -103,7 +103,7 @@
     background-color: #4a5685;
     left: 50%;
     right: 80%;
-    top: -10%%;
+    top: -10%;
     animation-delay: 3.5s;
 }
 
@@ -129,7 +129,7 @@
     width: 55%;
     background-color: #090d1f;
     left: 50%;
-    top: -10%%;
+    top: -10%;
     animation-delay: 0.5s;
 }
 
@@ -272,5 +272,155 @@ p {
 
     100% {
         top: -100px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .textbox {
+        width: 90%;
+        padding-top: 50px;
+    }
+    .texttop,
+    .textbottom {
+        font-size: 1.3rem;
+        left: 20px;
+    }
+
+    .textmiddle,
+    .textmiddle1 {
+        font-size: 3rem;
+    }
+
+    .words {
+        font-size: 1.4rem;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+
+    nav ul li {
+        margin-bottom: var(--spacing-unit);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .textbox {
+        width: 90%;
+        padding-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .textmiddle,
+    .textmiddle1 {
+        font-size: 2.9rem;
+        left: 90px;
+        position: relative;
+    }
+
+    .texttop{
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.875em; /* Adjust for smaller screens */
+    }
+
+    .textbox {
+        width: 100%;
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20px;
+    }
+
+    .texttop,
+    .textbottom {
+        font-size: 1.2rem;
+    }
+
+    .textmiddle,
+    .textmiddle1 {
+        font-size: 2.5rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .words {
+        font-size: 1.2rem;
+    }
+
+    .words span{
+        animation: animation 9s ease infinite;
+    }
+
+    header {
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 0.875em; /* Adjust for smaller screens */
+    }
+
+    .textbox {
+        width: 100%;
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+        padding-right: 40px;
+    }
+    .textmiddle,
+    .textmiddle1 {
+        font-size: 2.3rem;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 120px;
+    }
+    
+    .texttop{
+        font-size: 1em;
+    }
+
+    .textbottom{
+        font-size: 1em;
+    }
+
+    p{
+        padding-bottom: 10px;
+    }
+
+    .words span {
+        font-size: 1rem; /* Adjust font size inside words animation */
+    }
+
+    header {
+        justify-content: center;
+        padding: 10px;
+    }
+
+@media screen and (max-width: 320px){
+    
+    .textbottom{
+        padding-right: 30px;
+    }
+
+    .textmiddle,
+    .textmiddle1 {
+        padding-right: 130px;
+    }
+
+    .gradientcontainer {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
