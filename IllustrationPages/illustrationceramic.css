@@ -38,6 +38,7 @@ nav ul {
     display: flex;
     gap: var(--spacing-unit);
     flex-wrap: wrap;
+    text-decoration: none;
 }
 
 nav ul li a {
@@ -99,6 +100,7 @@ h2 {
 
 li{
     padding: 10px;
+    list-style: none;
 }
 
 
@@ -247,4 +249,127 @@ p {
     left: 50%;
     top: -10%;
     animation-delay: 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+    .CeramicProjects {
+        margin-left: 200px;
+        justify-content: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .textleft {
+        margin-left: 20px;
+    }
+
+    .gradientcontainer {
+        height: 170vh;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 835px) {
+    .CeramicProjects {
+        justify-content: center;
+    }
+
+    .textleft {
+        position: fixed;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        padding-top: 70px;
+        padding-left: 30px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p{
+        width: fit-content;
+        padding: 5px;
+    }
+
+    .project-card {
+        width: 90%;
+        max-width: 450px;
+        margin: 0;
+    }
+
+    .gradientcontainer {
+        height: 180vh;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 555px) {
+    header {
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .textleft {
+        position: inherit;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .CeramicProjects {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+@media screen and (max-width: 396px) {
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 10px;
+        font-size: 0.875em;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    .project-card{
+        width: 90%;
+        max-width: 300px;
+        margin: auto;
+        height: max-content;
+        justify-items: center;
+    }
+
+    .project-card img{
+    align-items: center;
+    width: 250px;
+    height: fit-content;
+    }
+    .gradientcontainer {
+        height: 250vh;
+    }
+
+}
 }

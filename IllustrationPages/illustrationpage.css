@@ -429,12 +429,6 @@ p {
 
 
 @media screen and (max-width: 320px){
-    .gridcontainer{
-        padding: 0;
-        margin: auto;
-        justify-items: center;
-    }
-
     header {
         justify-content: center;
     }
