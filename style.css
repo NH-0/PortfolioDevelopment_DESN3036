@@ -255,6 +255,13 @@ p {
     animation: animation 6s ease infinite;
 }
 
+footer{
+justify-items: right;
+margin-top: 120px;
+position:relative;
+row-gap: 40px;
+}
+
 
 @keyframes animation {
 
