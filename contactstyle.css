@@ -104,7 +104,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-input[type=text],
+input[type=text], input[type=email],
 select,
 textarea {
     width: 100%;
@@ -294,7 +294,7 @@ label {
         padding: 10px;
     }
 
-    input[type=text],
+    input[type=text],input[type=email],
     textarea,
     input[type=submit] {
         font-size: 1em;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
-    <link rel="contact stylesheet" href="contactstyle.css">
+    <link rel="stylesheet" href="./contactstyle.css"> <!-- Fixed 'rel' attribute -->
 </head>
 <body>
     <header>
@@ -13,40 +13,61 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./aboutpage.html">About</a></li>
                 <li><a href="./projectwd.html">Projects</a></li>
-                <li><a class= "active" href=./contactpage.html">Contact</a></li>
+                <li><a class="active" href="./contactpage.html">Contact</a></li> <!-- Fixed anchor tag -->
             </ul>
         </nav>
     </header>
+
+    <div class="textcontainer">
+        <h1>Let's Connect!</h1>
+        <h2>I'd love to chat and hear from you</h2>
+    </div>
     
-        <div class = textcontainer>
-    <h1> Let's Connect!</h1>
-    <h2>I'd love to chat and hear from you</h2>
-    </div>
-    </section>
-    <section class ="formcontainer">
-        <form action="0nancy.huang@gmail.com" method="post"enctype="text/plain">
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="fullname" placeholder="Your full name..">
-        
-            <label for="email">Email</label>
-            <input type="text" id="email" name="enteremail" placeholder="Your email..">
-        
-            <label for="message">Message</label>
-            <textarea id="subject" name="message" placeholder="Write your message here..." style="height: 150px"></textarea>
-        
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+<section class="formcontainer">
+    <form id="contactForm" onsubmit="return submitForm(this)">
+        <label for="fname">Full name</label>
+        <input type="text" id="fname" name="fullname" placeholder="Your full name.." required>
 
-    <div class="gradientcontainer">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="enteremail" placeholder="Your email.." required>
 
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." style="height: 150px" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<div class="gradientcontainer">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<script>
+function submitForm(form) {
+    const fullname = form.fullname.value.trim();
+    const email = form.enteremail.value.trim();
+    const message = form.message.value.trim();
+
+    // Check if any field is empty
+    if (!fullname || !email || !message) {
+        alert("Please fill in all fields.");
+        return false;  // Prevent form submission if any field is empty
+    }
+
+    // Construct a mailto link with the form data
+    const mailtoLink = `mailto:0nancy.huang@gmail.com?subject=Contact%20Form%20Submission&body=Full%20Name:%20${encodeURIComponent(fullname)}%0AEmail:%20${encodeURIComponent(email)}%0AMessage:%20${encodeURIComponent(message)}`;
+
+    // Open the default email client with the pre-filled information
+    window.location.href = mailtoLink;
+
+    return false; // Prevent form submission to avoid page reload
+}
+</script>
 </body>
 </html>
