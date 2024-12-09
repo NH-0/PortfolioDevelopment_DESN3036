@@ -1,22 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'Poppins-regular';
-  src: url(./Fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-regular';
+    src: url(./Fonts/Poppins-Regular.ttf);
 }
 
 
-:root{
-    --primarytext-color: rgba(163, 211, 231, 1);
+:root {
+    --primarytext-color: rgb(114, 168, 190);
     --subtext-color: rgba(143, 184, 195, 1);
     --background-color: rgba(16, 25, 32, 1);
-    --headeractive-text: rgba(143, 184, 195, 1);
+    --headeractive-text: rgba(238, 204, 109, 1);
     --headernonactive-text: rgba(73, 108, 117, 1);
     --headerbg: rgba(16, 25, 32, 1);
+    --textnonactive: rgb(42, 134, 187);
+    --projectstitle: rgb(82, 150, 189);
     --transition-duration: 0.5s;
     --scale: 1;
     --scale-hover: 1.1;
@@ -28,7 +30,7 @@
     --font-family: 'Poppins-regular', sans-serif;
 }
 
-.active{
+.active {
     color: var(--headeractive-text);
 }
 
@@ -42,13 +44,13 @@ nav ul li a {
     display: inline-block;
     text-decoration: none;
     font-weight: var(--font-weight-bold);
-    color: var(--headernonactive-text);
+    color: var(--primarytext-color);
     transition: color var(--transition-duration) ease, transform var(--transition-duration)ease;
     font-family: var(--font-family);
-  }
+}
 
 nav ul li a:hover {
-    color: var(--headeractive-text);
+    color: var(--textnonactive);
     transform: scale(var(--scale-hover));
 }
 
@@ -60,8 +62,8 @@ header {
     width: 100%;
 }
 
-body{
-  place-items: center;
+body {
+    place-items: center;
 }
 
 h2 {
@@ -70,8 +72,10 @@ h2 {
     color: var(--primarytext-color);
     justify-content: center;
     flex-direction: column;
-    align-items: center; /* Centers the h1 horizontally */
-    text-align: center; /* Centers the text */
+    align-items: center;
+    /* Centers the h1 horizontally */
+    text-align: center;
+    /* Centers the text */
     margin: 0 auto;
     color: var(--subtext-color);
     width: 600px;
@@ -79,27 +83,30 @@ h2 {
     font-size: 1.5em;
 }
 
-h1{
-font-size: 4em;
-margin-top: var(--spacing-unit);
+h1 {
+    font-size: 4em;
+    margin-top: var(--spacing-unit);
     color: var(--primarytext-color);
     justify-content: center;
     flex-direction: column;
-    align-items: center; /* Centers the h1 horizontally */
-    text-align: center; /* Centers the text */
+    align-items: center;
+    /* Centers the h1 horizontally */
+    text-align: center;
+    /* Centers the text */
     margin: 0 auto;
-    color: var(--subtext-color);
     width: 600px;
     font-family: var(--font-family);
 
 }
 
-.textcontainer{
-  margin-top: 40px;
-  margin-bottom: 30px;
+.textcontainer {
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -111,39 +118,39 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: vertical;
     font-family: var(--font-family);
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-  
-  .formcontainer {
+}
+
+.formcontainer {
     border-radius: 5px;
     background-color: rgba(46, 69, 87, 0.78);
     padding: 15px;
     width: 550px;
- display: inline-block;
- margin: auto;
-  }
+    display: inline-block;
+    margin: auto;
+}
 
-  label{
+label {
     background-color: rgba(46, 69, 87, 0.78);
     color: rgba(203, 226, 233, 1);
     font-family: var(--font-family);
-  }
+}
 
 
-  .gradientcontainer {
-    height: 120vh;
+.gradientcontainer {
+    height: 130vh;
     width: 100vw;
     position: absolute;
     margin: auto;
@@ -153,7 +160,7 @@ input[type=text], select, textarea {
     bottom: 0;
     overflow: hidden;
     border-radius: 10px;
-    z-index:-1;
+    z-index: -1;
     --background-color: rgba(16, 25, 32, 1);
 
 }
@@ -162,7 +169,7 @@ input[type=text], select, textarea {
     --background-color: rgba(16, 25, 32, 1);
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     z-index: -1;
     border-radius: 20%;
     animation: gradient 3s infinite;
@@ -196,7 +203,7 @@ input[type=text], select, textarea {
 .gradientcontainer div:nth-child(3) {
     height: 65%;
     width: 80%;
-    background-color: #292d3a;
+    background-color: #02081a;
     left: -15%;
     top: -20%;
     animation-delay: 0.3s;
@@ -245,4 +252,78 @@ input[type=text], select, textarea {
     left: 50%;
     top: -10%;
     animation-delay: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .formcontainer {
+        width: 70%;
+        padding: 10px;
+        margin: auto;
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    header {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .formcontainer {
+        width: 70%;
+        padding: 10px;
+    }
+
+    input[type=text],
+    textarea,
+    input[type=submit] {
+        font-size: 1em;
+    }
+
+    .gradientcontainer div {
+        animation: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        padding: 0;
+        text-align: center;
+        font-size: 0.875em;
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .textcontainer {
+        padding: 10px;
+    }
+
+    .gradientcontainer {
+        height: 160vh;
+    }
 }

@@ -10,13 +10,14 @@
     src: url(./Fonts/Poppins-Regular.ttf);
 }
 
-:root {
-    --primarytext-color: rgba(163, 211, 231, 1);
+:root{
+    --primarytext-color: rgb(114, 168, 190);
     --subtext-color: rgba(143, 184, 195, 1);
     --background-color: rgba(16, 25, 32, 1);
-    --headeractive-text: rgba(143, 184, 195, 1);
-    --headernonactive-text: rgba(73, 108, 117, 1);
+    --headeractive-text: rgba(238, 204, 109, 1);
+    --headernonactive-text: rgb(114, 168, 190);
     --headerbg: rgba(16, 25, 32, 1);
+    --projectcardbg: rgba(16, 25, 32, 0.6);
     --transition-duration: 0.5s;
     --scale: 1;
     --scale-hover: 1.1;
@@ -26,8 +27,8 @@
     --font-weight-regular: 300;
     --font-weight-bold: 700;
     --font-family: 'Poppins-regular', sans-serif;
-}
 
+}
 .gradientcontainer {
     height: 100vh;
     width: 100vw;
@@ -82,7 +83,7 @@
 .gradientcontainer div:nth-child(3) {
     height: 65%;
     width: 80%;
-    background-color: #292d3a;
+    background-color: #02081a;
     left: -15%;
     top: -20%;
     animation-delay: 0.3s;
@@ -153,7 +154,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--headeractive-text);
+    color: var(--primarytext-color);
     transform: scale(var(--scale-hover));
 }
 
