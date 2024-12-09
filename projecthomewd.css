@@ -9,13 +9,15 @@
     src: url(./Fonts/Poppins-Regular.ttf);
   }
 
-:root{
-    --primarytext-color: rgba(163, 211, 231, 1);
+  :root {
+    --primarytext-color: rgb(114, 168, 190);
     --subtext-color: rgba(143, 184, 195, 1);
     --background-color: rgba(16, 25, 32, 1);
-    --headeractive-text: rgba(143, 184, 195, 1);
+    --headeractive-text: rgba(238, 204, 109, 1);
     --headernonactive-text: rgba(73, 108, 117, 1);
     --headerbg: rgba(16, 25, 32, 1);
+    --textnonactive: rgb(42, 134, 187);
+    --projectstitle: rgb(82, 150, 189);
     --transition-duration: 0.5s;
     --scale: 1;
     --scale-hover: 1.1;
@@ -42,14 +44,14 @@ nav ul li a {
     display: inline-block;
     text-decoration: none;
     font-weight: var(--font-weight-bold);
-    color: var(--headernonactive-text);
-    transition: color var(--transition-duration) ease, transform var(--transition-duration)ease;
+    color: var(--primarytext-color);
+    transition: var(--transition-duration) ease, transform var(--transition-duration)ease;
     font-family: var(--font-family);
  
 }
 
 nav ul li a:hover {
-    color: var(--headeractive-text);
+    color: var(--textnonactive);
     transform: scale(var(--scale-hover));
 }
 
@@ -84,7 +86,6 @@ h1 {
     color: var(--primarytext-color);
     font-family: var(--font-family);
     font-size: 4em;
-    color: var(--headeractive-text);
     padding-bottom: 20px;
 }
 
@@ -96,12 +97,51 @@ h2 {
     font-size: 1em;
 }
 
+h3 {
+    text-decoration: none;
+    color: var(--primarytext-color);
+    font-family: var(--font-family);
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
 li{
     padding: 10px;
 }
 
+.project-cards {
+    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.gridcontainer{
+    display: flex;
+    justify-content: right;
+}
+
+.project-cards img {
+    width: 320px;
+    height: 320px;
+    object-fit:cover;
+    object-position: center;
+    align-content: center;
+    filter: grayscale(100%);
+    transition: transform .4s;
+}
+
+img:hover{
+    filter: none;
+    transition: 0.5s;
+    transform: scale(1.05);
+    box-shadow: 6px 6px rgba(16, 25, 32, 1);
+}
+
+
 .gradientcontainer {
-    height: 110vh;
+    height: 100vh;
     width: 100vw;
     position: absolute;
     margin: auto;
@@ -154,7 +194,7 @@ li{
 .gradientcontainer div:nth-child(3) {
     height: 65%;
     width: 80%;
-    background-color: #292d3a;
+    background-color: #02081a;
     left: -15%;
     top: -20%;
     animation-delay: 0.3s;
