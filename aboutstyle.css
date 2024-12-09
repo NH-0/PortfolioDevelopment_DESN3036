@@ -298,13 +298,14 @@ hr {
     border-radius: 5px;
 }
 
+
 @media screen and (max-width: 1200px) {
    
     .grid-container {
         width: 100%;
         padding: 0;
         justify-content: center;
-        margin: auto;
+        /* margin: auto; */
         margin-left: 20px;
     }
 
@@ -440,7 +441,7 @@ hr {
 
 @media screen and (max-width: 320px) {
     .gradientcontainer {
-        height: 290vh;
+        height: 340vh;
     }
 
     .grid-container {
