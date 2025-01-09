@@ -154,7 +154,6 @@ img:hover {
     top: 0;
     bottom: 0;
     overflow: hidden;
-    border-radius: 10px;
     z-index: -1;
     --background-color: rgba(16, 25, 32, 1);
 
@@ -166,7 +165,6 @@ img:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 20%;
     animation: gradient 3s infinite;
 }
 
