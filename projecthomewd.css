@@ -113,19 +113,28 @@ li{
 
 .project-cards {
     padding: 10px;
-    margin: auto;
     margin-top: 40px;
+    justify-items: center;
 }
 
-.gridcontainer{
+/*.gridcontainer{
     display: flex;
     justify-content: right;
+}*/
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-left: 380px;
+    margin-top: 50px;
 }
 
 .project-cards img {
-    width: 320px;
-    height: 320px;
-    object-fit:cover;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     object-position: center;
     align-content: center;
     filter: grayscale(100%);
@@ -150,7 +159,7 @@ img:hover{
     top: 0;
     bottom: 0;
     overflow: hidden;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     z-index:-1;
     --background-color: rgba(16, 25, 32, 1);
 
@@ -162,7 +171,6 @@ img:hover{
     top: 0;
     left:0;
     z-index: -1;
-    border-radius: 20%;
     animation: gradient 3s infinite;
 }
 
